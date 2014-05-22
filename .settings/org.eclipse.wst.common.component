@@ -4,6 +4,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/resource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/demo"/>
         <property name="context-root" value="v2"/>
         <property name="java-output-path" value="/shijingwangv2/build/classes"/>
     </wb-module>
