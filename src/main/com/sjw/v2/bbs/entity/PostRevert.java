@@ -17,7 +17,7 @@ import org.nutz.dao.entity.annotation.Table;
 public class PostRevert {
 
 	@Id
-	private Long oid;
+	private Long id;
 
 	@Column
 	private int floor;
@@ -26,8 +26,8 @@ public class PostRevert {
 	private PostRevertState state;
 
 	@Column("post_id")
-	private String postId;
-	
+	private Long postId;
+
 	/**
 	 * 页面显示使用，不做相应的持久化
 	 */
@@ -57,25 +57,17 @@ public class PostRevert {
 	private PostRevert parentPostRevert;
 
 	private List<PostRevert> childRevert;
-	
+
 	@Override
 	public boolean equals(Object obj) {
-		if(!(obj instanceof PostRevert)){
+		if (!(obj instanceof PostRevert)) {
 			return false;
 		}
 		PostRevert targetObject = (PostRevert) obj;
-		if(targetObject.getPostRevertId().equals(this.postRevertId)){
+		if (targetObject.getPostRevertId().equals(this.postRevertId)) {
 			return true;
 		}
 		return false;
-	}
-
-	public Long getOid() {
-		return oid;
-	}
-
-	public void setOid(Long oid) {
-		this.oid = oid;
 	}
 
 	public int getFloor() {
@@ -86,11 +78,19 @@ public class PostRevert {
 		this.floor = floor;
 	}
 
-	public String getPostId() {
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getPostId() {
 		return postId;
 	}
 
-	public void setPostId(String postId) {
+	public void setPostId(Long postId) {
 		this.postId = postId;
 	}
 

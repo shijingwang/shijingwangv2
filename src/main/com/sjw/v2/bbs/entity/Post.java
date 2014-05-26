@@ -19,13 +19,7 @@ public class Post {
 	 * 实体编号
 	 */
 	@Id
-	private Long oid;
-
-	/**
-	 * 帖子编号
-	 */
-	@Column("post_id")
-	private String postId;
+	private Long id;
 
 	@Column("author_customer_id")
 	private String authorCustomerId;
@@ -105,7 +99,7 @@ public class Post {
 	private Date revertTime;
 
 	@Column("category_id")
-	private String categoryId;
+	private Long categoryId;
 
 	@Override
 	public boolean equals(Object obj) {
@@ -113,26 +107,18 @@ public class Post {
 			return false;
 		}
 		Post targetObject = (Post) obj;
-		if (targetObject.getPostId().equals(postId)) {
+		if (targetObject.getId().equals(id)) {
 			return true;
 		}
 		return false;
 	}
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
-	}
-
-	public String getPostId() {
-		return postId;
-	}
-
-	public void setPostId(String postId) {
-		this.postId = postId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getAuthorCustomerId() {
@@ -327,11 +313,11 @@ public class Post {
 		this.revertTime = revertTime;
 	}
 
-	public String getCategoryId() {
+	public Long getCategoryId() {
 		return categoryId;
 	}
 
-	public void setCategoryId(String categoryId) {
+	public void setCategoryId(Long categoryId) {
 		this.categoryId = categoryId;
 	}
 

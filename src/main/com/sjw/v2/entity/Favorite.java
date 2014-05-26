@@ -10,35 +10,35 @@ import org.nutz.dao.entity.annotation.Table;
  * @Author Kulen
  * @CreateTime 2010-6-28上午01:50:41
  * @Version 1.0
- * @Explanation 
+ * @Explanation
  */
 @Table("core_favorite")
 public class Favorite {
-	
+
 	@Id
-	private Long oid;
-	
+	private Long id;
+
 	@Column("favorite_id")
 	private String favoriteId;
-	
+
 	@Column("reference_id")
 	private String referenceId;
-	
+
 	@Column("customer_id")
 	private String customerId;
-	
+
 	@Column
 	private FavoriteType type;
-	
+
 	@Column("create_time")
 	private Date createTime;
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getFavoriteId() {

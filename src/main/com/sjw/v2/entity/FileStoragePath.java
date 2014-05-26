@@ -8,39 +8,39 @@ import org.nutz.dao.entity.annotation.Table;
  * @Author Kulen
  * @CreateTime 2010-5-28上午09:24:50
  * @Version 1.0
- * @Explanation 
+ * @Explanation
  */
 @Table("common_file_storage_path")
 public class FileStoragePath {
-	
+
 	@Id
-	private Long oid;
-	
+	private Long id;
+
 	@Column("reference_id")
 	private String referenceId;
-	
+
 	@Column("storage_type")
 	private StorageType storageType;
-	
+
 	@Column("first_path")
 	private String firstPath;
-	
+
 	@Column("second_path")
 	private String secondPath;
-	
+
 	@Column("third_path")
 	private String thirdPath;
-	
-	public String getPath(){
-		return firstPath + "/"	+ secondPath + "/"	+ thirdPath;
+
+	public String getPath() {
+		return firstPath + "/" + secondPath + "/" + thirdPath;
 	}
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getReferenceId() {

@@ -14,96 +14,93 @@ import org.nutz.dao.entity.annotation.Table;
  */
 @Table("core_customer")
 public class Customer {
-	
-	//会员的通用信息
-	@Id
-	private Long oid;
 
-	@Column("customer_id")
-	private String customerId;
-	
+	// 会员的通用信息
+	@Id
+	private Long id;
+
 	private boolean available;
-	
+
 	@Column("employee")
 	private boolean employee;
 
 	@Column("user_name")
 	private String userName;
-	
+
 	@Column("nick_name")
 	private String nickName;
-	
+
 	private String originalPassword;
-	
+
 	@Column
 	private String password;
-	
+
 	private String confirmPassword;
-	
+
 	@Column
 	private String gender;
-	
+
 	@Column
 	private Date birthday;
-	
+
 	@Column("create_time")
 	private Date createTime;
-	
+
 	@Column
 	private String email;
-	
+
 	@Column("email_authentication")
 	private boolean emailAuthentication;
-	
+
 	@Column
 	private String qq;
-	
+
 	@Column
 	private String msn;
-	
+
 	@Column
 	private String yahooMessenger;
-	
+
 	@Column
 	private String blog;
-	
+
 	@Column
 	private String weibo;
-	
+
 	@Column("favorite_food")
 	private String favoriteFood;
-	
+
 	@Column("style_cooking")
 	private String styleCooking;
-	
+
 	@Column
 	private String signet;
-		
-	//会员的私人的信息
+
+	// 会员的私人的信息
 	@Column("real_name")
 	private String realName;
-	
+
 	@Column
 	private String cell;
-	
+
 	@Column
 	private String phone;
-	
+
 	@Column("identity_card_id")
 	private String identityCardId;
-	
+
 	@Column("post_code")
 	private String postCode;
-	
+
 	@Column
 	private String address;
-	
+
 	@Column
 	private String diploma;
-	
+
 	@Column
 	private String major;
-	
+
 	private String headPortrait;
 
 	public Customer() {
@@ -112,12 +109,20 @@ public class Customer {
 		this.employee = false;
 	}
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getWeibo() {
+		return weibo;
+	}
+
+	public void setWeibo(String weibo) {
+		this.weibo = weibo;
 	}
 
 	public Date getCreateTime() {
@@ -126,14 +131,6 @@ public class Customer {
 
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
-	}
-
-	public String getCustomerId() {
-		return customerId;
-	}
-
-	public void setCustomerId(String customerId) {
-		this.customerId = customerId;
 	}
 
 	public boolean isEmployee() {

@@ -16,10 +16,7 @@ import org.nutz.dao.entity.annotation.Table;
 public class Bulletin {
 
 	@Id
-	private Long oid;
-
-	@Column("bulletin_id")
-	private String bulletinId;
+	private Long id;
 
 	@Column
 	private String title;
@@ -95,20 +92,12 @@ public class Bulletin {
 		this.picture = picture;
 	}
 
-	public String getBulletinId() {
-		return bulletinId;
+	public Long getId() {
+		return id;
 	}
 
-	public void setBulletinId(String bulletinId) {
-		this.bulletinId = bulletinId;
-	}
-
-	public Long getOid() {
-		return oid;
-	}
-
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public int getPriority() {

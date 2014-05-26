@@ -22,7 +22,7 @@ public class Region {
 	public static final int DISTRICT = 3;
 
 	@Id
-	private Long oid;
+	private Long id;
 
 	private Region parentRegion;
 
@@ -34,12 +34,12 @@ public class Region {
 	@Column("region_type")
 	private int regionType;
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public Region getParentRegion() {

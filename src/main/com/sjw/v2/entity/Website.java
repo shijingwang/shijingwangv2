@@ -14,7 +14,7 @@ import org.nutz.dao.entity.annotation.Table;
 public class Website {
 
 	@Id
-	private Long oid;
+	private Long id;
 
 	@Column("website_id")
 	private String websiteId;
@@ -28,12 +28,12 @@ public class Website {
 	@Column
 	private int port;
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getWebsiteId() {

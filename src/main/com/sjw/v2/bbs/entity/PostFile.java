@@ -14,33 +14,33 @@ import org.nutz.dao.entity.annotation.Table;
 public class PostFile {
 
 	@Id
-	private Long oid;
+	private Long id;
 
 	@Column("post_id")
-	private String postId;
-	
+	private Long postId;
+
 	@Column("file_original_name")
 	private String fileOriginalName;
-	
+
 	@Column("file_new_name")
 	private String fileNewName;
-	
+
 	@Column("storage_path")
 	private String storagePath;
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public String getPostId() {
+	public Long getPostId() {
 		return postId;
 	}
 
-	public void setPostId(String postId) {
+	public void setPostId(Long postId) {
 		this.postId = postId;
 	}
 

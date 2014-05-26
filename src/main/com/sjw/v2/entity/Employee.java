@@ -10,68 +10,65 @@ import org.nutz.dao.entity.annotation.Table;
  * @Author Kulen
  * @CreateTime 2010-5-19上午10:57:25
  * @Version 1.0
- * @Explanation 
+ * @Explanation
  */
 @Table("core_employee")
 public class Employee {
-	
+
 	@Id
-	private Long oid;
-	
-	@Column("employee_id")
-	private String employeeId;
-	
+	private Long id;
+
 	@Column("customer_id")
 	private String customerId;
-	
+
 	@Column
 	private boolean available;
-	
+
 	@Column("user_name")
 	private String userName;
-	
+
 	@Column("real_name")
 	private String realName;
-	
+
 	@Column
 	private String password;
-	
+
 	@Column
 	private String sex;
-	
+
 	@Column
 	private String address;
-	
+
 	@Column
 	private String cell;
-	
+
 	@Column
 	private String phone;
-	
+
 	@Column
 	private Date birthday;
-	
+
 	@Column("create_time")
 	private Date createTime;
-	
+
 	@Column("memo")
 	private String memo;
-	
-	public static final String INITIAL_PASSWORD="111111"; 
 
-	public Employee(){
+	public static final String INITIAL_PASSWORD = "111111";
+
+	public Employee() {
 		this.available = true;
 		this.password = Employee.INITIAL_PASSWORD;
 	}
-	
-	public Long getOid() {
-		return oid;
+
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
-	
+
 	public boolean isAvailable() {
 		return available;
 	}
@@ -80,14 +77,6 @@ public class Employee {
 		this.available = available;
 	}
 
-	public String getEmployeeId() {
-		return employeeId;
-	}
-
-	public void setEmployeeId(String employeeId) {
-		this.employeeId = employeeId;
-	}
-	
 	public String getCustomerId() {
 		return customerId;
 	}

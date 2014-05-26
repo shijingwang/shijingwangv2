@@ -14,27 +14,27 @@ import org.nutz.dao.entity.annotation.Table;
 public class PostContent {
 
 	@Id
-	private Long oid;
+	private Long id;
 
 	@Column("post_id")
-	private String postId;
+	private Long postId;
 
 	@Column
 	private String content;
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public String getPostId() {
+	public Long getPostId() {
 		return postId;
 	}
 
-	public void setPostId(String postId) {
+	public void setPostId(Long postId) {
 		this.postId = postId;
 	}
 

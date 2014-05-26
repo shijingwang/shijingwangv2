@@ -18,17 +18,14 @@ import org.nutz.dao.entity.annotation.Table;
 public class Category {
 
 	@Id
-	private Long oid;
-
-	@Column("category_id")
-	private String categoryId;
+	private Long id;
 
 	@Column
 	private String name;
-	
+
 	@Column
 	private CategoryState state;
-	
+
 	@Column
 	private String keywords;
 
@@ -40,21 +37,21 @@ public class Category {
 
 	@Column
 	private int priority;
-	
+
 	@Column
 	private String master;
-	
+
 	private List<String> masterIdList;
-	
+
 	@Column("create_time")
 	private Date createTime;
-	
+
 	private String titleImage;
 
 	public List<String> getMasterIdList() {
 		masterIdList = new ArrayList<String>();
 		if (master != null && master.trim().length() > 0) {
-			for(String masterId:master.split(",")){
+			for (String masterId : master.split(",")) {
 				masterIdList.add(masterId);
 			}
 		}
@@ -65,20 +62,12 @@ public class Category {
 		this.masterIdList = masterIdList;
 	}
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
-	}
-
-	public String getCategoryId() {
-		return categoryId;
-	}
-
-	public void setCategoryId(String categoryId) {
-		this.categoryId = categoryId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getName() {

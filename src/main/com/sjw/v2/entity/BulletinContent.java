@@ -14,28 +14,17 @@ import org.nutz.dao.entity.annotation.Table;
 public class BulletinContent {
 
 	@Id
-	private Long oid;
-
-	@Column("bulletin_id")
-	private String bulletinId;
+	private Long id;
 
 	@Column
 	private String content;
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
-	}
-
-	public String getBulletinId() {
-		return bulletinId;
-	}
-
-	public void setBulletinId(String bulletinId) {
-		this.bulletinId = bulletinId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getContent() {
