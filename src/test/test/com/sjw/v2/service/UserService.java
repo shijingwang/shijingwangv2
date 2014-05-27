@@ -1,4 +1,4 @@
-package com.sjw.v2.service;
+package test.com.sjw.v2.service;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

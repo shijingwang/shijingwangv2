@@ -1,4 +1,4 @@
-package com.sjw.v2.service;
+package test.com.sjw.v2.service;
 
 import java.sql.*;
 import javax.sql.DataSource;
