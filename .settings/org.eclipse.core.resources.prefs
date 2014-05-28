@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/com/sjw/common/security/MD5.java=UTF-8
 encoding//src/main/com/sjw/v2/bbs/entity/Category.java=UTF-8
 encoding//src/main/com/sjw/v2/bbs/entity/CategoryState.java=UTF-8
 encoding//src/main/com/sjw/v2/bbs/entity/Post.java=UTF-8
@@ -22,3 +23,7 @@ encoding//src/main/com/sjw/v2/entity/Region.java=UTF-8
 encoding//src/main/com/sjw/v2/entity/StorageFolder.java=UTF-8
 encoding//src/main/com/sjw/v2/entity/StorageType.java=UTF-8
 encoding//src/main/com/sjw/v2/entity/Website.java=UTF-8
+encoding//src/main/com/sjw/v2/service/CustomerComparator.java=UTF-8
+encoding//src/main/com/sjw/v2/service/CustomerService.java=UTF-8
+encoding//src/main/com/sjw/v2/service/EmployeeService.java=UTF-8
+encoding//src/main/com/sjw/v2/service/WebsiteService.java=UTF-8

@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.nutz.dao.entity.annotation.Column;
 import org.nutz.dao.entity.annotation.Id;
+import org.nutz.dao.entity.annotation.Name;
 import org.nutz.dao.entity.annotation.Table;
 
 /**
@@ -23,9 +24,6 @@ public class Customer {
 
 	@Column("employee")
 	private boolean employee;
-
-	@Column("user_name")
-	private String userName;
 
 	@Column("nick_name")
 	private String nickName;
@@ -47,6 +45,7 @@ public class Customer {
 	private Date createTime;
 
 	@Column
+	@Name
 	private String email;
 
 	@Column("email_authentication")
@@ -147,14 +146,6 @@ public class Customer {
 
 	public void setRealName(String realName) {
 		this.realName = realName;
-	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
 	}
 
 	public String getNickName() {

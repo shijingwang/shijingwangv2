@@ -4,8 +4,6 @@ package test.com.sjw.v2.service;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.sjw.v2.service.UserService;
-
 public class LogTest {
 
 	static final Logger log = LogManager.getLogger(UserService.class);

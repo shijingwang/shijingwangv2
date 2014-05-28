@@ -1,5 +1,7 @@
 package com.sjw.v2.entity;
 
+import java.util.Date;
+
 import org.nutz.dao.entity.annotation.Column;
 import org.nutz.dao.entity.annotation.Id;
 import org.nutz.dao.entity.annotation.Table;
@@ -15,6 +17,9 @@ public class FileStoragePath {
 
 	@Id
 	private Long id;
+
+	@Column
+	private Date date;
 
 	@Column("reference_id")
 	private String referenceId;

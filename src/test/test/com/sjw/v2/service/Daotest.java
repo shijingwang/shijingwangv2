@@ -23,9 +23,6 @@ public class Daotest {
 		System.out.println(c.getName());
 		System.out.println(c.getState());
 		System.out.println(c.getPostNumber());
-		System.out.println(c.getCategoryId());
-		c.setOid(null);
-		c.setCategoryId("Test1");
 		dao.insert(c);
 		
 	}

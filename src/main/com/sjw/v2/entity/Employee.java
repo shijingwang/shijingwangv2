@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.nutz.dao.entity.annotation.Column;
 import org.nutz.dao.entity.annotation.Id;
+import org.nutz.dao.entity.annotation.Name;
 import org.nutz.dao.entity.annotation.Table;
 
 /**
@@ -24,6 +25,7 @@ public class Employee {
 	@Column
 	private boolean available;
 
+	@Name
 	@Column("user_name")
 	private String userName;
 
